@@ -1,0 +1,23 @@
+{
+  "name": "festival",
+  "version": "1.0.0",
+  "description": "App con Gulp, SASS y HTML5",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topgirl2410/festival.git"
+  },
+  "author": "María Leonor Pinto Sabater",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/topgirl2410/festival/issues"
+  },
+  "homepage": "https://github.com/topgirl2410/festival#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "sass": "^1.56.1"
+  }
+}
