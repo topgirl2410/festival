@@ -7,7 +7,9 @@
     h1 {
         color: v.$blanco;
         text-align: center;
-        margin: 0;
+        @include m.tablet { 
+            margin: 0;
+        }
     }
 
     .contenido-header {
@@ -31,6 +33,10 @@
         color: v.$blanco;
         font-size: 2.4rem;
         margin-bottom: 1rem;
+
+        @include m.tablet {
+            margin: 0;
+        }
 
         &:hover {
             color: v.$amarillo;
