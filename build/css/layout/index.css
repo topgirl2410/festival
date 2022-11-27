@@ -46,6 +46,7 @@
 .video {
   position: relative;
   max-height: 70rem;
+  min-height: 50rem;
   overflow: hidden;
 }
 .video .overlay {
@@ -59,13 +60,21 @@
   justify-content: center;
 }
 .video video {
-  width: 100%;
+  width: auto;
   display: block;
 }
+@media (min-width: 992px) {
+  .video video {
+    width: 100%;
+  }
+}
 
+.contenido-video {
+  z-index: 10;
+}
 .contenido-video h2 {
   color: #ffffff;
-  font-size: 7rem;
+  font-size: 6rem;
   margin: 0;
 }
 .contenido-video p {
@@ -75,4 +84,5 @@
   color: #ffffff;
   font-weight: bold;
   font-size: 2.4rem;
+  margin: 0;
 }
