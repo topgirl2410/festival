@@ -40,18 +40,22 @@ function mostrarImagen(id) {
     const overlay = document.createElement('DIV');
     overlay.appendChild(imagen);
     overlay.classList.add('overlay');
+    overlay.onclick = function () {
+        const body = document.querySelector('body');
+        body.classList.remove('fijar-body');
+        overlay.remove();
+    }
 
     // Boton para cerrar el Modal
 
     const cerrarModal = document.createElement('P');
     cerrarModal.textContent = 'X';
-    cerrarModal.onclick = function() {
-
-
+    cerrarModal.classList.add('btn-cerrar');
+    cerrarModal.onclick = function () {
+        const body = document.querySelector('body');
+        body.classList.remove('fijar-body');
         overlay.remove();
     }
-    cerrarModal.classList.add('btn-cerrar');
-
 
     overlay.appendChild(cerrarModal)
 
@@ -59,5 +63,5 @@ function mostrarImagen(id) {
 
     const body = document.querySelector('body');
     body.appendChild(overlay);
-
+    body.classList.add('fijar-body')
 }
