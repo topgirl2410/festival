@@ -45,6 +45,8 @@
 
 .video {
   position: relative;
+  max-height: 70rem;
+  overflow: hidden;
 }
 .video .overlay {
   position: absolute;
@@ -52,7 +54,25 @@
   background: linear-gradient(76deg, rgba(165, 3, 255, 0.5) 0%, rgba(255, 0, 110, 0.3337710084) 100%);
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .video video {
   width: 100%;
+  display: block;
+}
+
+.contenido-video h2 {
+  color: #ffffff;
+  font-size: 7rem;
+  margin: 0;
+}
+.contenido-video p {
+  background-color: #f53756;
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.4rem;
 }
