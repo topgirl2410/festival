@@ -8,8 +8,6 @@ const cssnano = require('cssnano');
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 
-
-
 // Imagenes
 
 const cache = require('gulp-cache');
@@ -53,7 +51,6 @@ function versionWebp(done) {
 
     done();
 }
-
 
 function versionAvif(done) {
     const opciones = {
